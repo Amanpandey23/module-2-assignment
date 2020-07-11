@@ -1,0 +1,52 @@
+article{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+.section1 {
+    background-color: blue;
+}
+.section2 {
+    background-color: brown;
+}
+.section3 {
+    background-color: chartreuse;
+}
+div{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #000000;
+}
+section{
+    position: relative;
+    background-color: yellow;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 2%;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+@media (min-width: 992px){
+    section{
+        float: left;
+        width: 29.33%;
+        margin: 2%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section{
+        float: left;
+        width: 46%;
+        margin: 2%;
+    }
+    section:nth-child(3){
+        clear: left;
+        width: 96%;
+        margin: 2%;
+    }
+}
